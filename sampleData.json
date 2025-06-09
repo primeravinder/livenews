@@ -1,0 +1,71 @@
+{
+  "status": "ok",
+  "totalResults": 5,
+  "articles": [
+    {
+      "source": {
+        "id": "wired",
+        "name": "Wired"
+      },
+      "author": "Wired",
+      "title": "The US Is Storing Migrant Children’s DNA in a Criminal Database",
+      "description": "Customs and Border Protection has swabbed the DNA of migrant children as young as 4, whose genetic data is uploaded to an FBI-run database that can track them if they commit crimes in the future.",
+      "url": "https://www.wired.com/story/cbp-dna-migrant-children-fbi-codis/",
+      "urlToImage": "https://media.wired.com/photos/683631d1a984193c72371e4d/191:100/w_1280,c_limit/migrant-children-dna-database.jpg",
+      "publishedAt": "2025-05-29T10:30:00Z",
+      "content": "The United States government has collected DNA samples from upwards of 133,000 migrant children and teenagersincluding at least one 4-year-oldand uploaded their genetic data into a national criminal … [+3346 chars]"
+    },
+    {
+      "source": {
+        "id": "entertainment-weekly",
+        "name": "Entertainment Weekly"
+      },
+      "author": "https://www.facebook.com/entertainmentweekly",
+      "title": "'Dept. Q' review: Matthew Goode is grumpy perfection in chilling crime drama",
+      "description": "In Netflix's 'Dept. Q,' based on the Danish crime novels, Matthew Goode stars as a troubled detective tasked with investigating cold cases. Read our review.",
+      "url": "https://ew.com/department-q-tv-series-review-netflix-matthew-goode-11743259",
+      "urlToImage": "https://ew.com/thmb/lxM7bauDoT0yitdUGUNMsePNpa8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/DEPT-Q-Matthew-Goode-Alexej-Manvelov-052825-62c5823dfb174ed9ac916ba258b96591.jpg",
+      "publishedAt": "2025-05-29T07:22:30.3770667Z",
+      "content": "Cranky Detective Chief Inspector Carl Morck (A Discovery of WitchesMathew Goode), just back at work after surviving a traumatic shooting, is tasked with heading up a new cold case department. It soun… [+3554 chars]"
+    },
+    {
+      "source": {
+        "id": "rte",
+        "name": "RTE"
+      },
+      "author": "Paul Reynolds",
+      "title": "Senior Kinahan figure on way to Ireland after extradition",
+      "description": "One of the most senior figures in the Kinahan Organised Crime Group, who is wanted in Ireland to face charges of murder and involvement with a criminal gang, has been extradited from the United Arab Emirates.",
+      "url": "https://www.rte.ie/news/2025/0529/1515567-kinahan-extradition/",
+      "urlToImage": "https://www.rte.ie/images/0022a02a-1600.jpg",
+      "publishedAt": "2025-05-29T06:38:53Z",
+      "content": "One of the most senior figures in the Kinahan Organised Crime Group, who is wanted in Ireland to face charges of murder and involvement with a criminal gang, has been extradited from the United Arab … [+2303 chars]"
+    },
+    {
+      "source": {
+        "id": "abc-news",
+        "name": "ABC News"
+      },
+      "author": "DAVE COLLINS Associated Press",
+      "title": "Crypto crime spills over from behind the screen to real-life violence",
+      "description": "An alleged kidnapping in New York is the latest instance in which authorities say cryptocurrency-related crimes have involved real-world violence",
+      "url": "https://abcnews.go.com/Technology/wireStory/crypto-crime-spills-screen-real-life-violence-122297116",
+      "urlToImage": "https://i.abcnewsfe.com/a/2b966541-a8bf-4a24-9f8a-99073ccd7569/wirestory_cf03f95b034b7ffa3d38a3ec3efc7c25_16x9.jpg?w=1600",
+      "publishedAt": "2025-05-29T04:06:38Z",
+      "content": "HARTFORD, Conn. -- A man says he was tortured for weeks in a New York townhouse. Another in Paris was held for ransom and his finger cut off. A couple in Connecticut were carjacked, beaten and thrown… [+4416 chars]"
+    },
+    {
+      "source": {
+        "id": "the-jerusalem-post",
+        "name": "The Jerusalem Post"
+      },
+      "author": null,
+      "title": "Congresswoman Nita Lowey: I am proud to stand with Israel",
+      "description": "Gantz: Security of Israel is above politics; PA: This is a crime.",
+      "url": "https://www.jpost.com/Arab-Israeli-Conflict/Gantz-Security-of-Israel-is-above-politics-Palestinians-This-is-a-crime-607595",
+      "urlToImage": "https://images.jpost.com/image/upload/f_auto,fl_lossy/t_Article2016_ControlFaceDetect/448812",
+      "publishedAt": "2019-11-13T04:41:00Z",
+      "content": "US Ambassador David M. Friedman said the US stands “with our friend and ally Israel at this critical moment” on social media on Tuesday after roughly 170 rockets were fired on Israel from the Gaza St… [+6160 chars]"
+    }
+  ]
+}
