@@ -4,27 +4,29 @@ import Spinner from "./Spinner";
 import PropTypes from 'prop-types'
 
 class News extends Component {
-    articles = []
 
     static propTypes = {
-        country: PropTypes.string,
         pageSize: PropTypes.number,
-        category: PropTypes.string
+        category: PropTypes.string,
     }
-    static defaultProps = {
-        pageSize: 8
-    }
+
     constructor() {
         super();
         this.state = {
-            articles: this.articles,
+            articles: [],
             page: 1,
             loading: false,
+            pageSize: 12,
         }
     }
+
     async componentDidMount() {
+        this.updateNews()
+    }
+
+    async updateNews(){
         this.setState({ loading: true });
-        let url = `https://newsapi.org/v2/top-headlines?category=${this.props.category}&pageSize=12&$page=${this.state.page}&sortBy=publishedAt&apiKey=370afd43cff34f18bb74a6fc4bd350cd`;
+        const url = `https://newsapi.org/v2/top-headlines?category=${this.props.category}&pageSize=${this.state.pageSize}&page=${this.state.page}&sortBy=publishedAt&apiKey=370afd43cff34f18bb74a6fc4bd350cd`;
         let data = await fetch(url);
         let parsedData = await data.json();
         this.setState({
@@ -33,27 +35,18 @@ class News extends Component {
             loading: false
         });
     }
+
     handlePrevClick = async ()=> {
-        this.setState({ loading: true });
-        let url = `https://newsapi.org/v2/top-headlines?category=${this.props.category}&pageSize=12&$page=${this.state.page - 1}&sortBy=publishedAt&apiKey=370afd43cff34f18bb74a6fc4bd350cd`;
-        let data = await fetch(url);
-        let parsedData = await data.json();
-        this.setState({
-            page: this.state.page - 1,
-            articles: parsedData.articles,
-            loading: false
-        });
+        this.setState(
+            (prevState) => ({ page: prevState.page - 1 }),
+            () => this.updateNews()
+        );
     }
     handleNextClick = async ()=> {
-        this.setState({ loading: true });
-        let url = `https://newsapi.org/v2/top-headlines?category=${this.props.category}&pageSize=12&$page=${this.state.page + 1}&sortBy=publishedAt&apiKey=370afd43cff34f18bb74a6fc4bd350cd`;
-        let data = await fetch(url);
-        let parsedData = await data.json();
-        this.setState({
-            page: this.state.page + 1,
-            articles: parsedData.articles,
-            loading: false
-        });
+        this.setState(
+            (prevState) => ({ page: prevState.page + 1 }),
+            () => this.updateNews()
+        );
     }
     renderPlaceholders = ()=> {
         // Create an array of 12 placeholders (same as pageSize)
