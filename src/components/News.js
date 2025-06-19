@@ -10,18 +10,15 @@ class News extends Component {
         category: PropTypes.string,
     }
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             articles: [],
             page: 1,
             loading: false,
             pageSize: 12,
         }
-    }
-
-    async componentDidMount() {
-        this.updateNews()
+        document.title = `${this.props.category} - LiveNews on World Affairs`;
     }
 
     async updateNews(){
@@ -35,6 +32,12 @@ class News extends Component {
             loading: false
         });
     }
+
+    async componentDidMount() {
+        this.updateNews()
+    }
+
+
 
     handlePrevClick = async ()=> {
         this.setState(
@@ -59,7 +62,7 @@ class News extends Component {
         return (
             <>
                 <div className="container my-4 text-center">
-                    <h2>News Headline of the Day : USA Region</h2>
+                    <h2>Top Headlines from {this.props.category} | Live News</h2>
                 </div>
                 <div className="container px-10 py-10">
                     <div className="row">
